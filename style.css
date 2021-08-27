@@ -1,0 +1,71 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 10vh 30vh 20vh 20vh 30vh 40vh;
+    grid-template-areas: "h h" /*  aqui o h representa a área do header, que vai ser a navbar*/
+                         "abu  abu" /*Aqui o abu é about us, ou seja, sobre nós*/
+                         "hist hist" /*Seção de história de empresa*/
+                         "abs  abs" /*Aqui o abs é about services, ou seja, sobre os serviços*/
+                         "port port" /*Aqui o port representa o portfólio*/
+                         "cont cont" /*Parte de contatos*/
+}
+html, body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+    text-align: center;
+}
+
+.container-navbar{
+    position:fixed;
+    overflow: hidden;
+    width: 100%;
+    grid-area: h;
+    align-items: center;
+    display:flex;
+    justify-content: space-evenly;
+    background-color: rgb(73, 73, 15);
+}
+.container a{
+    padding: 10px;
+    text-decoration: none;
+    color:rgb(3, 2, 2);
+}
+
+.container a:hover{
+    color:yellow;
+}
+
+.container-navbar img{
+    padding: 5px;
+}
+
+.aboutus {
+    grid-area: abu;
+    background-color: turquoise;
+}
+
+.history{
+    grid-area: hist;
+    background-color: teal;
+}
+
+.aboutservices{
+    grid-area: abs;
+    background-color: tomato;
+}
+
+.portfolio{
+    grid-area: port;
+    background-color: yellow;
+}
+.footer{
+    grid-area: cont;
+    background-color: violet;
+}
