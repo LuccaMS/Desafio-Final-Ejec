@@ -2,31 +2,24 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.container
-{
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    grid-template-rows: 10vh 30vh 20vh 20vh 30vh 40vh;
-    grid-template-areas: "h h" /*  aqui o h representa a área do header, que vai ser a navbar*/
-                         "abu  abu" /*Aqui o abu é about us, ou seja, sobre nós*/
-                         "hist hist" /*Seção de história de empresa*/
-                         "abs  abs" /*Aqui o abs é about services, ou seja, sobre os serviços*/
-                         "port port" /*Aqui o port representa o portfólio*/
-                         "cont cont" /*Parte de contatos*/
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
+
 html, body{
     margin:0;
     padding: 0;
     box-sizing: border-box;
     background-color: white;
-    text-align: center;
+    text-align: center; 
+    line-break: auto;
 }
 
 .container-navbar{
     position:fixed;
-    overflow: hidden;
     width: 100%;
-    grid-area: h;
     align-items: center;
     display:flex;
     justify-content: space-evenly;
@@ -47,48 +40,83 @@ html, body{
 }
 
 .aboutus {
-    grid-area: abu;
     background-color: turquoise;
 }
 
-.aboutus > p{
-    word-break: break-all;
-}
 
 .history{
-    grid-area: hist;
     background-color: teal;
 }
 
 .aboutservices{
-    grid-area: abs;
     background-color: tomato;
 }
 
 .portfolio{
-    grid-area: port;
     background-color: yellow;
 }
 .footer{
-    grid-area: cont;
     background-color: violet;
 }
 
 .aboutus{
-    display:flex;
-    justify-content: center;
-    align-items: center;    
     gap: 10px;
-    padding: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .objetivo,.visao,.valores{
     display: flex;
+    flex-direction: row;
+
+}
+.container-aboutus{
+    padding-top: 10vh;
 }
 
-.teste{
+.container-portfolio,
+.container-aboutservices,.container-history,
+.container-valores,
+.container-aboutus{
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 80%;
+
+}
+
+.imgvalores,.imgobjetivo,.imgvisao
+{
+    padding: 10vh;
+    padding-left: 5vh;
+}
+
+.footer-div{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+.container-endereco-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.endereco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10vw;
+    font-size: 12px;
+}
+
+.formulario-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
 }
