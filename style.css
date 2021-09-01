@@ -50,11 +50,40 @@ body {
 
 .aboutservices {
   background-color: tomato;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.aboutservices-content {
+  display: flex;
+}
+
+.container-aboutservices {
+  max-width: 80%;
+}
+
+.aboutservices-left {
+  width: 50%;
+  padding: 20px;
+  text-align: justify;
+}
+
+.aboutservices-right {
+  width: 50%;
+  padding: 20px;
 }
 
 .portfolio {
   background-color: yellow;
+  display: flex;
+  justify-content: center;
 }
+
+.container-portfolio {
+  max-width: 80%;
+}
+
 .footer {
   background-color: white;
   padding-bottom: 1vh;
