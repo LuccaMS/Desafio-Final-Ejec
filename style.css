@@ -51,8 +51,8 @@ body {
 .aboutservices {
   background-color: tomato;
   display: flex;
-  align-items: center;
   justify-content: center;
+  padding-bottom: 10px;
 }
 
 .aboutservices-content {
@@ -66,6 +66,7 @@ body {
 .aboutservices-left {
   width: 50%;
   padding: 20px;
+  text-align: justify;
 }
 
 .aboutservices-right {
@@ -75,7 +76,14 @@ body {
 
 .portfolio {
   background-color: yellow;
+  display: flex;
+  justify-content: center;
 }
+
+.container-portfolio {
+  max-width: 80%;
+}
+
 .footer {
   background-color: white;
 }
