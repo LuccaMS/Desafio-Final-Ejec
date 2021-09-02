@@ -250,7 +250,7 @@ button[type=submit]
 }
 
 
-@media screen and (max-width: 1050px){
+@media screen and (max-width: 950px){
   .container-aboutus{
     flex-direction: column;
     justify-content: center;
@@ -258,7 +258,7 @@ button[type=submit]
   }
 }
 
-@media screen and (max-width: 850px)
+@media screen and (max-width: 750px)
 {
   .container-endereco-form{
     padding: 10px;
