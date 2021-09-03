@@ -13,34 +13,24 @@
         rel="stylesheet">
 
     <title>Site Institucional</title>
-    <script>
-          function FuncaoNavBar(){
-            var x = document.getElementsByClassName("container-navbar");
-            if(x.className === "container-navbar")
-            {
-                x.className = x.className + "responsive";
-            }
-            else{
-                x.className = "container-navbar";
-            }
-        }
-    </script>
 </head>
 
 <body>
     <div class="container">
-        <div class="container-navbar">
+        <nav class = "container-navbar">
             <img src="./download.png" alt="vscode-icon" widht="35px" height="35px">
-            <div class="navbar">
-                <a href="#aboutus-target">Sobre Nós</a>
-                <a href="#aboutservices-target">Serviços</a>
-                <a href="#portfolio-target">Portfólio</a>
-                <a href="#footer-target">Contatos</a>
-                <a href = "javascript:void(0);" class = "icon" onclick="FuncaoNavBar()">
-                <i class = "bars"></i>
-                </a>
+            <div class = "mobile-menu">
+                <div class = "line1"></div>
+                <div class = "line2"></div>
+                <div class = "line3"></div>
             </div>
-        </div>
+            <ul class = "navbar-list">
+                <li><a href="#aboutus-target">Sobre Nós</a></li>
+                <li><a href="#aboutservices-target">Serviços</a></li>
+                <li><a href="#portfolio-target">Portfólio</a></li>
+                <li><a href="#footer-target">Contatos</a></li>
+            </ul>
+        </nav>
 
         <div class="aboutus">
             <div><a name = "aboutus-target"></a></div>
@@ -202,6 +192,10 @@
             <h5>Copyright © 2021 - EJEC</h5>
         </div>
     </div>
+
+    <script src ="navbar.js">
+        
+    </script>
 </body>
 
 </html>
