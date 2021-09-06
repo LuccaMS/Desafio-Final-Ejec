@@ -48,6 +48,7 @@ body {
   align-items: center;
   background-color:rgb(17, 16, 16);
   z-index: 3;
+  border-bottom: 1px solid #666;
 }
 .container a {
   padding: 10px;
