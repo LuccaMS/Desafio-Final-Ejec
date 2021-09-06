@@ -93,7 +93,11 @@ body {
 }
 
 .container-aboutservices {
-  width: 80%;
+  max-width: 80vw;
+}
+
+.container-aboutservices h2{
+  margin-bottom: 5vh;
 }
 
 .aboutservices-left {
@@ -126,6 +130,10 @@ body {
 
 .container-portfolio {
   max-width: 80vw;
+}
+
+.container-portfolio h2{
+  margin-bottom: 5vh;
 }
 
 .container-portfolio > h2{
@@ -195,7 +203,7 @@ body {
   justify-content: center;
   align-items: center;
   max-width: 80%;
-  padding-top: 10vh;
+  padding-top: 5vh;
 }
 
 .history {
