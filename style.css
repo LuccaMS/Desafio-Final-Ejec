@@ -37,6 +37,7 @@ body {
   align-items: center;
 }
 
+
 .container-navbar {
   position: fixed;
   width: 100%;
@@ -69,8 +70,9 @@ body {
 }
 
 .aboutus {
-  /*background-color: #FFC914;*/
   background-color: #EDF060;
+  padding-bottom: 15px;
+  padding-top: 5px;
 }
 .history {
   background-color: teal;
@@ -173,11 +175,22 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  width: 30%;
 }
 
-.container-aboutus {
+.container-texto-valores,.container-texto-objetivo,.container-texto-aboutus h4{
+  text-align: left;
+  margin-bottom: 1px;
+}
+.container-divs{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.container-aboutus {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 80%;
@@ -320,10 +333,18 @@ button[type=submit]
 
 
 @media screen and (max-width: 950px){
-  .container-aboutus{
+  .container-divs{
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items:center;
+  }
+  .objetivo,
+  .visao,
+  .valores{
+    width: 90%;
+  }
+  .valores{
+    justify-content: flex-start;
   }
   .aboutservices-content {
     flex-direction: column;
